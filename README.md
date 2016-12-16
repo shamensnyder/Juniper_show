@@ -1,3 +1,3 @@
 # Juniper_show
 
-Python script worths with Python 3. Requires Netmiko.
+Python script works with Python 3. Requires Netmiko.
