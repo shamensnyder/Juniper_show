@@ -3,6 +3,7 @@ from datetime import datetime
 import getpass
 import time
 import sys
+import re
 
 print('CTRL-C to Exit Program at any time.')
 time.sleep(1)
@@ -20,22 +21,14 @@ def enterPassword():
 password = enterPassword()
 
 run_command = input('Type command you would like to run:')
-if run_command == 'request':
-    print('Request commands are not allowed. Exiting script')
-    sys.exit()
-elif run_command == 'start':
-    print('Start commands are not allowed. Exiting script')
-    sys.exit()
-elif run_command == 'edit':
-    print('Edit commands are not allowed. Exiting script')
-    sys.exit()
-elif run_command == 'restart':
-    print('Restart commands are not allowed. Exiting script')
+command_not_allowed = re.match(r'\brequest\b|\brestart\b|\bstart\b', run_command) #Regular Expression
+if command_not_allowed:
+    print('That command is not allowed. Exiting script')
     sys.exit()
 
 device_type = 'juniper'
 
-devices = ['mpr0-wrrnoh', 'mpr0-mrcrpa', 'as0-wrrnoh']
+devices = ['172.30.0.248', '172.30.0.246'] #IP or FQDN
 
 start_time = datetime.now()
 
