@@ -1,0 +1,62 @@
+iMac:~ ssnyder$ python /Users/ssnyder/Google\ Drive/Python/juniper_show.py 
+CTRL-C to Exit Program at any time.
+Enter username for device login:lab
+Enter password:
+Confirm password:
+Type command you would like to run:show version
+*** 172.30.0.248 ***
+
+Hostname: as0.clt.lab
+Model: ex3200-24t
+JUNOS Base OS boot [12.3R3.4]
+JUNOS Base OS Software Suite [12.3R3.4]
+JUNOS Kernel Software Suite [12.3R3.4]
+JUNOS Crypto Software Suite [12.3R3.4]
+JUNOS Online Documentation [12.3R3.4]
+JUNOS Enterprise Software Suite [12.3R3.4]
+JUNOS Packet Forwarding Engine Enterprise Software Suite [12.3R3.4]
+JUNOS Routing Software Suite [12.3R3.4]
+JUNOS Web Management [12.3R3.4]
+JUNOS FIPS mode utilities [12.3R3.4]
+
+*** END ***
+*** 172.30.0.246 ***
+
+Hostname: mpr1.rdu.lab
+Model: mx5-t
+Junos: 16.1R1.7
+JUNOS Base OS boot [16.1R1.7]
+JUNOS Base OS Software Suite [16.1R1.7]
+JUNOS Crypto Software Suite [16.1R1.7]
+JUNOS Packet Forwarding Engine Support (MX80) [16.1R1.7]
+JUNOS Web Management [16.1R1.7]
+JUNOS Online Documentation [16.1R1.7]
+JUNOS SDN Software Suite [16.1R1.7]
+JUNOS Services Application Level Gateways [16.1R1.7]
+JUNOS Services Jflow Container package [16.1R1.7]
+JUNOS Services Stateful Firewall [16.1R1.7]
+JUNOS Services NAT [16.1R1.7]
+JUNOS Services RPM [16.1R1.7]
+JUNOS Services Captive Portal and Content Delivery Container package [16.1R1.7]
+JUNOS Macsec Software Suite [16.1R1.7]
+JUNOS Services Crypto [16.1R1.7]
+JUNOS Services IPSec [16.1R1.7]
+JUNOS DP Crypto Software Software Suite [16.1R1.7]
+JUNOS py-base-powerpc [16.1R1.7]
+JUNOS py-extensions-powerpc [16.1R1.7]
+JUNOS jsd [powerpc-16.1R1.7-jet-1]
+JUNOS Kernel Software Suite [16.1R1.7]
+JUNOS Routing Software Suite [16.1R1.7]
+
+*** END ***
+Total time to run script:  0:00:09.987213
+
+Does not allow rebooting, entering shell, etc..
+
+iMac:~ ssnyder$ python /Users/ssnyder/Google\ Drive/Python/juniper_show.py 
+CTRL-C to Exit Program at any time.
+Enter username for device login:lab
+Enter password:
+Confirm password:
+Type command you would like to run:request system storage cleanup dry-run
+That command is not allowed. Exiting script

@@ -55,7 +55,6 @@ if command_not_allowed:
 
 device_type = 'juniper'
 
-#devices = ['172.30.0.248', '172.30.0.246'] #IP or FQDN
 start_time = datetime.now()
 for device in devices:
     net_connect = ConnectHandler(device_type = device_type, ip = device, username = username, password = password)
